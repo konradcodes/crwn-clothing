@@ -1,7 +1,7 @@
 import React from 'react';
 
 import MenuItem from '../menu-item/MenuItem';
-import './directory.styles.scss';
+import './directory.scss';
 class Directory extends React.Component {
   state = {
     sections: [
