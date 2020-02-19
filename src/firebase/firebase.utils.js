@@ -1,6 +1,6 @@
 import firebase from 'firebase/app';
-import 'firebase/firestore';
-import 'firebase/auth';
+import 'firebase/firestore'; //Database
+import 'firebase/auth'; //Authentication
 
 const config = {
   apiKey: 'AIzaSyDre_AvQFiiT5jPoIq-vTNtw7v8xXzCu7w',
@@ -37,8 +37,8 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
 };
 firebase.initializeApp(config);
 
-export const auth = firebase.auth();
-export const firestore = firebase.firestore();
+export const auth = firebase.auth(); //Authentication
+export const firestore = firebase.firestore(); // Database
 
 const provider = new firebase.auth.GoogleAuthProvider();
 provider.setCustomParameters({ prompt: 'select_account' });
